@@ -1,5 +1,4 @@
-"use server";
-import { supabase } from '@/utils/supabase/supabase';
+import { getSupabase } from '@/utils/supabase/supabase';
 import { NextRequest } from 'next/server';
 
 
@@ -13,7 +12,7 @@ export async function POST(request: NextRequest) {
       }, { status: 400 })
     }
 
-    const { data, error } = await supabase
+    const { data, error } = await getSupabase()
       .from('register')
       .insert([
         {

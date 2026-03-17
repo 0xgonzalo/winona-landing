@@ -1,8 +1,8 @@
-import { supabase } from "@/utils/supabase/supabase"
+import { getSupabase } from "@/utils/supabase/supabase"
 
 export async function getUserCount() {
   try {
-    const { count, error } = await supabase
+    const { count, error } = await getSupabase()
       .from('register')
       .select('*', { count: 'exact', head: true })
 
