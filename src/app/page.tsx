@@ -20,7 +20,7 @@ export default function Home() {
               </div>
               <div className="w-full mt-2">
                 <div className="text-xs text-center text-gray-300">
-                  <span className="font-bold">Disclaimer:</span> Llenar este formulario no garantiza el acceso. Bohemian Groove se contactará a la brevedad. Evento +18 hasta agotar stock de 100 invitaciones disponibles.
+                  <span className="font-bold">Disclaimer:</span> Llenar este formulario no garantiza el acceso. Indie Folks se contactará a la brevedad. Evento +18 hasta agotar stock de invitaciones disponibles.
                 </div>
               </div>
 
