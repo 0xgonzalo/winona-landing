@@ -12,6 +12,23 @@ export async function POST(request: NextRequest) {
       }, { status: 400 })
     }
 
+    const { count, error: countError } = await getSupabase()
+      .from('register')
+      .select('*', { count: 'exact', head: true })
+
+    if (countError) {
+      console.error('Error al contar registros:', countError)
+      return Response.json({ 
+        error: 'Error al verificar disponibilidad' 
+      }, { status: 500 })
+    }
+
+    if (count !== null && count >= 1000) {
+      return Response.json({ 
+        error: 'El cupo de registros está lleno. Se han alcanzado los 1000 registros.' 
+      }, { status: 403 })
+    }
+
     const { data, error } = await getSupabase()
       .from('register')
       .insert([
