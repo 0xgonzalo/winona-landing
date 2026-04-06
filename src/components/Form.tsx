@@ -70,24 +70,24 @@ const Form = () => {
 
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
       <div>
-        <label className="text-xs mb-1 block" htmlFor="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="text" className="w-full rounded bg-gray-100 px-3 py-2 font-semibold" required />
+        <label className="text-xs mb-1 block text-gray-300" htmlFor="nombre">Nombre</label>
+        <input id="nombre" name="nombre" type="text" className="w-full rounded bg-gray-800 text-white px-3 py-2 font-semibold border border-gray-600" required />
       </div>
       <div>
-        <label className="text-xs mb-1 block" htmlFor="apellido">Apellido</label>
-        <input id="apellido" name="apellido" type="text" className="w-full rounded bg-gray-100 px-3 py-2 font-semibold" required />
+        <label className="text-xs mb-1 block text-gray-300" htmlFor="apellido">Apellido</label>
+        <input id="apellido" name="apellido" type="text" className="w-full rounded bg-gray-800 text-white px-3 py-2 font-semibold border border-gray-600" required />
       </div>
       <div>
-        <label className="text-xs mb-1 block" htmlFor="email">Email</label>
-        <input id="email" name="email" type="email" className="w-full rounded bg-gray-100 px-3 py-2 font-semibold" required />
+        <label className="text-xs mb-1 block text-gray-300" htmlFor="email">Email</label>
+        <input id="email" name="email" type="email" className="w-full rounded bg-gray-800 text-white px-3 py-2 font-semibold border border-gray-600" required />
       </div>
       <div>
-        <label className="text-xs mb-1 block" htmlFor="fecha_nac">Fecha de Nacimiento</label>
-        <input id="fecha_nac" name="fecha_nac" type="date" className="w-full rounded bg-gray-100 px-3 py-2" placeholder="DD/MM/YYYY" required />
+        <label className="text-xs mb-1 block text-gray-300" htmlFor="fecha_nac">Fecha de Nacimiento</label>
+        <input id="fecha_nac" name="fecha_nac" type="date" className="w-full rounded bg-gray-800 text-white px-3 py-2 border border-gray-600" placeholder="DD/MM/YYYY" required />
       </div>
       <div>
-        <label className="text-xs mb-1 block" htmlFor="ciudad">Ciudad</label>
-        <input id="ciudad" name="ciudad" type="text" className="w-full rounded bg-gray-100 px-3 py-2 font-semibold" required />
+        <label className="text-xs mb-1 block text-gray-300" htmlFor="ciudad">Ciudad</label>
+        <input id="ciudad" name="ciudad" type="text" className="w-full rounded bg-gray-800 text-white px-3 py-2 font-semibold border border-gray-600" required />
       </div>
       <button type="submit" className="mt-4 bg-[#E4572E] text-white rounded py-2 font-semibold hover:bg-[#c13c1a] transition-colors">Enviar</button>
     </form>

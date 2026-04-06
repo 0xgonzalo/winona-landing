@@ -1,27 +1,22 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const republicaMinor = localFont({
+  src: "../../public/fonts/Republica Minor 2.0.otf",
+  variable: "--font-republica",
 });
 
 export const metadata: Metadata = {
-  title: "Winona Riders Evento Exclusivo",
-  description: "Evento exclusivo de Presentación de Winona Riders",
+  title: "0% PRE ESCUCHA OFICIAL",
+  description: "0% PRE ESCUCHA OFICIAL - Winona Riders",
   icons: {
     icon: '/favicon.ico',
   },
   openGraph: {
-    title: "Winona Riders Evento Exclusivo",
-    description: "Evento exclusivo de Presentación de Winona Riders",
+    title: "0% PRE ESCUCHA OFICIAL",
+    description: "0% PRE ESCUCHA OFICIAL - Winona Riders",
     images: [
       { url: '/portada-winona-disco.png' },
     ],
@@ -36,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${republicaMinor.variable} antialiased`}
       >
         {children}
         <Analytics />
