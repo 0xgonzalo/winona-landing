@@ -8,6 +8,18 @@ const LIMITE_USUARIOS = 1000
 export default async function RegistroPage() {
   const usuariosRegistrados = await getUserCount()
 
+  if (usuariosRegistrados === null) {
+    return (
+      <div className="max-w-md mx-auto p-6">
+        <div className="text-center">
+          <h2 className="text-lg font-bold text-gray-500 mb-4">
+            Error al cargar el registro. Recargá la página.
+          </h2>
+        </div>
+      </div>
+    )
+  }
+
   if (usuariosRegistrados >= LIMITE_USUARIOS) {
     return (
       <div className="max-w-md mx-auto p-6">

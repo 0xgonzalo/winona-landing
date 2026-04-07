@@ -24,15 +24,29 @@ export default function Home() {
                 </div>
               </div>
 
+              <div className="flex md:hidden flex-col items-center mt-8">
+                <h3 className="text-xl text-center mb-4">HACÉ EL PRESAVE DEL ALBUM ACÁ</h3>
+                <a href="https://orcd.co/0porciento" target="_blank" rel="noopener noreferrer"
+                   className="bg-[#E4572E] text-white font-bold px-8 py-3 rounded-full text-lg hover:bg-[#c13c1a] transition-colors">
+                  Presave
+                </a>
+              </div>
             </div>
             <div className="flex-1 flex flex-col items-center justify-center">
               <Image src="/portada-winona-disco.png" alt="Winona" width={128} height={128} className="w-full md:w-64 h-auto mb-8" />
               <span className="text-4xl md:text-4xl text-center font-sans">Winona Riders</span>
               <p className="text-center text-2xl md:text-2xl mt-2">0% PRE ESCUCHA OFICIAL</p>
               <div className="flex items-center mt-10 gap-16">
-                <Image src="/indie-folks-logo.png" alt="Indie Folks Logo" width={128} height={128} className="w-16 md:w-24 h-auto" />
                 <Image src="/winona-logo.png" alt="Winona Riders Logo" width={128} height={128} className="w-16 md:w-24 h-auto" />
                 <Image src="/die-recordings.png" alt="Die Recordings Logo" width={128} height={128} className="w-16 md:w-48 h-auto" />
+                <Image src="/indie-folks-logo.png" alt="Indie Folks Logo" width={128} height={128} className="w-16 md:w-24 h-auto" />
+              </div>
+              <div className="hidden md:flex flex-col items-center mt-14">
+                <h3 className="text-xl md:text-2xl text-center mb-4">HACÉ EL PRESAVE DEL ALBUM ACÁ</h3>
+                <a href="https://orcd.co/0porciento" target="_blank" rel="noopener noreferrer"
+                   className="bg-[#E4572E] text-white font-bold px-8 py-3 rounded-full text-lg hover:bg-[#c13c1a] transition-colors">
+                  Presave
+                </a>
               </div>
             </div>
           </div>

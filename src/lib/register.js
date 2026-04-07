@@ -8,12 +8,12 @@ export async function getUserCount() {
 
     if (error) {
       console.error('Error al obtener conteo:', error)
-      return 0
+      return null
     }
 
     return count || 0
   } catch (error) {
     console.error('Error del servidor:', error)
-    return 0
+    return null
   }
 }
